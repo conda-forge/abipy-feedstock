@@ -22,6 +22,7 @@ requirements:
     - pip
   run:
     - python
+    - pip
     - monty
     - tabulate
     - apscheduler
@@ -41,6 +42,8 @@ requirements:
 test:
   imports:
     - abipy
+  commands:
+    - python -m pip check
 
 about:
   home: http://abinit.github.io/abipy
