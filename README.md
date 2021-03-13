@@ -5,9 +5,13 @@ Home: http://abinit.github.io/abipy
 
 Package license: GPL-2.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/abipy-feedstock/blob/master/LICENSE.txt)
 
 Summary: Open-source library for analyzing the results produced by ABINIT
+
+Development: https://github.com/abinit/abipy
+
+Documentation: http://abinit.github.io/abipy
 
 AbiPy is a Python library to analyze the results produced by
 Abinit, an open-source program for the ab-initio calculations
@@ -117,9 +121,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
