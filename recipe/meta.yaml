@@ -1,5 +1,5 @@
 {% set name = "abipy" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4aef7f5467f9f9f0694b9b0877d56159e0d04b2957fa47fc9412d3dd8c837b74
+  sha256: cd7259c025c1c2583a10d8e62303a240264112e9ecd7644d21266474f2790ec6
 
 build:
   noarch: python
