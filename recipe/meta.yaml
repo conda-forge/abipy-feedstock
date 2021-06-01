@@ -42,6 +42,10 @@ requirements:
 test:
   imports:
     - abipy
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://abinit.github.io/abipy
