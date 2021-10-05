@@ -1,5 +1,5 @@
 {% set name = "abipy" %}
-{% set version = "0.9.1" %}
+{% set version = "0.9.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3ff7f1fb6cd9a1a051d074629c5a6c77a388d2c290ef9be5392e46bafbc73470
+  sha256: a44ab6baaede31402aac0642855fcea99b255a47ff85fc68662c047e6dc27a99
 
 build:
   noarch: python
@@ -31,13 +31,14 @@ requirements:
     - scipy
     - sympy
     - spglib
-    - pymatgen >=2022.0.4
+    - pymatgen >=2022.0.14
     - netcdf4
     - matplotlib-base
     - seaborn
     - plotly
     - ipython
     - chart-studio
+    - click
 
 test:
   imports:
