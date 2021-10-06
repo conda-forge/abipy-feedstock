@@ -31,13 +31,14 @@ requirements:
     - scipy
     - sympy
     - spglib
-    - pymatgen >=2022.0.4
+    - pymatgen >=2022.0.14
     - netcdf4
     - matplotlib-base
     - seaborn
     - plotly
     - ipython
     - chart-studio
+    - click
 
 test:
   imports:
