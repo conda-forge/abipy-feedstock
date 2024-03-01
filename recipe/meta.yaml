@@ -39,6 +39,7 @@ requirements:
     - plotly
     - ipython
     - chart-studio
+    - click
 
 test:
   imports:
