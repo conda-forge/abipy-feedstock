@@ -1,5 +1,5 @@
 {% set name = "abipy" %}
-{% set version = "0.9.7" %}
+{% set version = "0.9.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 297976d4044ac2735e8d23b0aa88ed4a175897e37cc006198672c050f47c46e5
+  sha256: d55599b2b8a8ae44910066a37a8fad67c0d076d104ad46059ab96c7d5f8351da
 
 build:
   noarch: python
@@ -28,7 +28,7 @@ requirements:
     - pyyaml >=3.11
     - ruamel.yaml >=0.16.12
     - pandas
-    - numpy
+    - numpy <2.0.0
     - scipy
     - sympy
     - spglib
@@ -40,6 +40,8 @@ requirements:
     - ipython
     - chart-studio
     - click
+    - ase
+    - phonopy
 
 test:
   imports:
