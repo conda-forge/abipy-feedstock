@@ -28,7 +28,7 @@ requirements:
     - pyyaml >=3.11
     - ruamel.yaml >=0.16.12
     - pandas
-    - numpy
+    - numpy <2.0.0
     - scipy
     - sympy
     - spglib
@@ -40,6 +40,8 @@ requirements:
     - ipython
     - chart-studio
     - click
+    - ase
+    - phonopy
 
 test:
   imports:
