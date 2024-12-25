@@ -6,23 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: d55599b2b8a8ae44910066a37a8fad67c0d076d104ad46059ab96c7d5f8351da
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - monty
     - tabulate
-    - apscheduler
+    - apscheduler <=3.10.4
     - pydispatcher >=2.0.5
     - tqdm
     - pyyaml >=3.11
@@ -50,6 +51,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://abinit.github.io/abipy
