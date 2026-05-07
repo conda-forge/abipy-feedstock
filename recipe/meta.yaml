@@ -20,6 +20,7 @@ requirements:
     - pip
     - setuptools
   run:
+    - packaging
     - python >={{ python_min }}
     - monty
     - tabulate
@@ -29,7 +30,7 @@ requirements:
     - pyyaml >=3.11
     - ruamel.yaml >=0.16.12
     - pandas
-    - numpy <2.0.0
+    - numpy
     - scipy
     - sympy
     - spglib
@@ -43,6 +44,7 @@ requirements:
     - click
     - ase
     - phonopy
+    - seekpath
 
 test:
   imports:
@@ -75,5 +77,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - jan-janssen
     - gmatteo
+    - jan-janssen
